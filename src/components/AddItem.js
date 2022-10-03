@@ -51,7 +51,7 @@ function AddItem(props) {
           onChange={(e) => setDescription(e.target.value)}
         />
 
-        <button type="submit">Add Item</button>
+        <button type="submit" className="btn-primary">Add Item</button>
       </form>
     </div>
   );

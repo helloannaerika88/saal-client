@@ -9,7 +9,7 @@ function RoomListPage() {
 
   const getAllRooms = () => {
     const storedToken = localStorage.getItem("authToken");
-
+    console.log(storedToken)
     axios
       .get(`${process.env.REACT_APP_API_URL}/api/rooms`,
       { headers: { Authorization: `Bearer ${storedToken}` } })
